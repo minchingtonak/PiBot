@@ -7,7 +7,7 @@ class Controller:
 		pygame.init()
 		self.c = pygame.joystick.Joystick(port)
 		self.c.init()
-		print('Initialized controller:', self.c.get_name())
+		print 'Initialized controller:', self.c.get_name()
 
 	def refresh_button_presses(self):
 		pygame.event.get(pygame.JOYBUTTONDOWN)
